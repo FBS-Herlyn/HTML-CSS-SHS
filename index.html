@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
   </head>
   <body>
     <!-- HEADER -->
@@ -35,17 +39,34 @@
     <section class="banner">
       <div class="container">
         <div class="banner__wrapper">
-          <div class="banner__text">
-            <h1>The Law of <span>Raioh</span> Designs</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Viverra senectus faucibus
-              morbi magnis consectetur. Amet velit tellus nunc massa facilisis
-              sed nisl massa platea. Vitae est donec justo hac.
-            </p>
-            <a href="" class="btn bg--primary">Explore more</a>
+          <div class="banner__left">
+            <div class="banner__text">
+              <h1>The Law of <span>Raioh</span> Designs</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Viverra senectus
+                faucibus morbi magnis consectetur. Amet velit tellus nunc massa
+                facilisis sed nisl massa platea. Vitae est donec justo hac.
+              </p>
+              <a href="" class="btn bg--primary">Explore more</a>
+            </div>
+            <div class="banner__text--slider">
+              <div class="slider">
+                <div class="slide">
+                  <img src="./img/slide1.png" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./img/slide2.png" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="./img/slide3.png" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="banner__text--slide slide"></div>
-          <div class="banner__img"></div>
+
+          <div class="banner__img">
+            <img src="./img/banner1.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -290,5 +311,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./slider.js"></script>
   </body>
 </html>

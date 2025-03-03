@@ -134,6 +134,18 @@ img {
   position: relative;
   padding: 4rem 0;
 }
+.header::after {
+  position: absolute;
+  content: " ";
+  display: inline-block;
+  background-color: var(--clr-dark);
+  width: 130rem;
+  height: 100rem;
+  right: -25rem;
+  top: -65rem;
+  z-index: -9;
+  border-radius: 50%;
+}
 .header__wrapper {
   display: flex;
   flex-direction: row;
@@ -182,9 +194,15 @@ img {
 .banner {
   padding: 1rem 0;
 }
+.banner__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .banner__text {
   max-width: 48rem;
   margin-left: 15rem;
+  margin-bottom: 10rem;
 }
 .banner h1 {
   font-size: 7rem;
@@ -201,39 +219,40 @@ img {
   color: var(--clr-light);
   margin-bottom: 5rem;
 }
-.banner__text--slide {
-  margin-top: 70px;
-  width: 400px;
-  height: 100px;
-  background-image: url(./img/slide1.png);
-  transition: 0.2s;
-  transform: translateY(0);
-}
-/* .banner__text--slide:hover {
-  background-image: url(./img/slide3.png);
-  cursor: pointer;
-}
 
-.slide {
-  transform: translateY(20px);
-} */
-
+.banner__text--slider img {
+  height: 10rem;
+}
+.tns-outer {
+  overflow: hidden;
+  max-width: 70rem;
+}
+.tns-outer > button {
+  display: none;
+}
+.tns-nav button {
+  display: none;
+}
 .banner__img {
-  display: inline-block;
+  position: relative;
+}
+.banner__img::after {
   position: absolute;
-  background: url(./img/banner-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 110vh;
-  width: 100%;
-  top: -2rem;
-  left: 36rem;
-  z-index: -99;
+  content: " ";
+  display: inline-block;
+  background-color: var(--clr-gray);
+  width: 65rem;
+  height: 65rem;
+  right: 0;
+  bottom: -7rem;
+  z-index: -9;
+  border-radius: 50%;
 }
 
 /* ABOUT */
 .about {
   padding: 5rem 0;
+  margin-top: 10rem;
   margin-left: 15rem;
 }
 .about__wrapper {
@@ -324,6 +343,7 @@ scale: 1;
 .events__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
 }
 /* NEWSLETTER */
 .newsletter {
@@ -433,7 +453,7 @@ scale: 1;
 }
 .cards img {
   z-index: 99;
-  width: 100%;
+  width: 30rem;
 }
 .cards--details {
   transform: translateY(-32.4rem);
