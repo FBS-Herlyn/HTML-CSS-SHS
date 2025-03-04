@@ -476,14 +476,17 @@ img {
   height: 100%;
   border-radius: 2rem;
   transition: transform 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 .cards:hover img {
   transform: scale(1.2);
   height: 25rem;
   object-fit: cover;
+  transition: all 0.5s ease-in-out;
 }
 .cards:hover .cards--details {
   height: 65%;
+  transition: all 0.5s ease-in-out;
 }
 .cards--details {
   position: absolute;
@@ -514,36 +517,3 @@ img {
   color: var(--clr-primary);
   font-weight: 700;
 }
-/* 
-.cards img:hover {
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  border-bottom-left-radius: none;
-  border-bottom-right-radius: none;
-  transition: all 0.1s ease;
-  height: 25rem;
-}
-.cards--details {
-  background-color: var(--clr-light);
-  padding: 2rem;
-  max-width: 24.5rem;
-  margin: 0 auto;
-  transform: translateY(-32rem);
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  opacity: 1;
-  transition: all 0.1s ease;
-}
-.cards--details h5 {
-  font-size: 1.7rem;
-  font-weight: 700;
-  line-height: 1.7rem;
-  margin-bottom: 2rem;
-}
-.cards--details p {
-  margin-bottom: 3rem;
-}
-.cards--details a {
-  color: var(--clr-primary);
-  font-weight: 700;
-} */
