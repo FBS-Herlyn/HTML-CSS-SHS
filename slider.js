@@ -1,3 +1,18 @@
+const contactButton1 = document.querySelector(".contact_button-1");
+const contactButton2 = document.querySelector(".contact_button-2");
+const contactForm = document.querySelector(".contact_forms ");
+
+contactButton1.addEventListener("click", () => {
+  contactForm.classList.toggle("open");
+  contactButton1.classList.toggle("open");
+  contactButton2.classList.toggle("open");
+});
+contactButton2.addEventListener("click", () => {
+  contactForm.classList.toggle("open");
+  contactButton1.classList.toggle("open");
+  contactButton2.classList.toggle("open");
+});
+
 var slider1 = tns({
   container: ".smallSlider",
   items: 1,

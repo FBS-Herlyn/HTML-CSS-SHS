@@ -442,6 +442,69 @@ img {
 .footer__social li a:hover {
   color: var(--clr-primary);
 }
+
+/* CONTACTS  */
+.contact {
+  position: relative;
+  z-index: 999;
+}
+/* .contact__wrapper {
+  position: relative;
+} */
+.contact_button-1 {
+  display: inline-block;
+  position: fixed;
+  background-color: var(--clr-primary);
+  padding: 1rem;
+  top: 27.4rem;
+  right: -6.1rem;
+  transform-origin: 0 0;
+  transform: rotate(270deg);
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.contact_button-1 span {
+  color: var(--clr-light);
+}
+.contact_button-2 {
+  display: none;
+}
+.contact_button-2.open {
+  display: inline-block;
+  position: fixed;
+  background-color: var(--clr-primary);
+  padding: 1rem;
+  top: 27.4rem;
+  right: 27.6rem;
+  transform-origin: 0 0;
+  transform: rotate(270deg);
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.contact_button-2.open span {
+  color: var(--clr-light);
+}
+
+.contact_forms {
+  position: fixed;
+  right: -100%;
+  padding: 2rem;
+  background-color: var(--clr-light);
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+.contact_form {
+  padding: 2rem;
+  background-color: var(--clr-light);
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+.contact_forms.open {
+  right: -6.1rem;
+}
+
 /* REPEATABLE PATTERN */
 .btn {
   padding: 1.5rem 2rem;
